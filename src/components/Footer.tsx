@@ -4,7 +4,7 @@ import { ArrowUpRight, Github, Linkedin, Twitter, Mail } from "lucide-react";
 const SOCIAL_LINKS = [
   { label: "GitHub", icon: Github, href: "https://github.com/anujkumar-m" },
   { label: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/anuj-kumar-m-197250328/" },
-  { label: "Twitter", icon: Twitter, href: "https://twitter.com/anujkumarm" },
+ // { label: "Twitter", icon: Twitter, href: "https://twitter.com/anujkumarm" },
 ];
 
 export default function Footer() {
