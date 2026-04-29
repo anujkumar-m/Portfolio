@@ -1,10 +1,15 @@
 import { motion } from "motion/react";
-import { ArrowUpRight, Github, Linkedin, Twitter, Mail } from "lucide-react";
+//import { ArrowUpRight, Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Mail, Phone } from "lucide-react";
 
 const SOCIAL_LINKS = [
   { label: "GitHub", icon: Github, href: "https://github.com/anujkumar-m" },
   { label: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/anuj-kumar-m-197250328/" },
- // { label: "Twitter", icon: Twitter, href: "https://twitter.com/anujkumarm" },
+];
+
+const CONTACT_INFO = [
+  { label: "Email", icon: Mail, text: "anujkumar72716@gmail.com", href: "mailto:anujkumar72716@gmail.com" },
+  { label: "Phone", icon: Phone, text: "+91 8778272176", href: "tel:+918778272176" },
 ];
 
 export default function Footer() {
@@ -81,6 +86,28 @@ export default function Footer() {
             >
               <s.icon size={16} className="group-hover:scale-110 transition-transform" />
               {s.label}
+            </a>
+          ))}
+        </motion.div>
+
+        {/* Contact info — new line */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false, amount: 0.15 }}
+          transition={{ delay: 0.55, duration: 0.8 }}
+          className="flex items-center gap-8 mt-4"
+        >
+          {CONTACT_INFO.map((c) => (
+            <a
+              key={c.label}
+              id={`footer-${c.label.toLowerCase()}`}
+              href={c.href}
+              aria-label={c.label}
+              className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-indigo-400 transition-colors group"
+            >
+              <c.icon size={16} className="group-hover:scale-110 transition-transform" />
+              {c.text}
             </a>
           ))}
         </motion.div>
