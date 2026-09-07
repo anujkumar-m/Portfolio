@@ -7,13 +7,14 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProjectGrid from "./components/ProjectGrid";
 import Skills from "./components/Skills";
+import CodingProfiles from "./components/CodingProfiles";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import { motion, AnimatePresence } from "motion/react";
 import { Terminal, CheckCircle } from "lucide-react";
 
 const ABOUT_HIGHLIGHTS = [
-  "Pre-final year B.Tech IT student (2023–2027 batch)",
+  "final year B.Tech IT student (2023–2027 batch)",
   "Strong fundamentals in Data Structures & Algorithms",
   "Built 3+ real-world full stack projects from scratch",
   "Passionate about clean code, system design & best practices",
@@ -80,7 +81,7 @@ export default function App() {
               >
                 <p className="text-slate-400 leading-relaxed text-base mb-8">
                   I'm <strong className="text-slate-200">Anuj Kumar M</strong>, a
-                  pre-final year B.Tech Information Technology student based in
+                  final year B.Tech Information Technology student based in
                   India. I'm passionate about full stack development and love
                   building real-world applications that solve actual problems —
                   from clean database schemas and REST APIs to intuitive
@@ -121,6 +122,9 @@ export default function App() {
 
           {/* ── Skills ── */}
           <Skills />
+
+          {/* ── Coding Profiles ── */}
+          <CodingProfiles />
 
           {/* ── Services ── */}
           <Services />

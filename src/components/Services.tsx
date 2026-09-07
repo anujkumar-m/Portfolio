@@ -78,7 +78,7 @@ export default function Services() {
             </h2>
           </div>
           <p className="max-w-sm text-slate-400 leading-relaxed text-sm md:text-base">
-            As a pre-final year IT student, I cover the full stack — from
+            As a final year IT student, I cover the full stack — from
             designing UIs to deploying APIs — with a strong focus on learning
             and building real-world applications.
           </p>

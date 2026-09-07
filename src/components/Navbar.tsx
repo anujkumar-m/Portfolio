@@ -4,6 +4,7 @@ import { Github, Linkedin, Mail, Code2, FileText } from "lucide-react";
 const NAV_LINKS = [
   { name: "Work", href: "#work" },
   { name: "Skills", href: "#skills" },
+  { name: "Coding", href: "#coding" },
   { name: "Services", href: "#services" },
   { name: "Contact", href: "#contact" },
 ];

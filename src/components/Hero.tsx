@@ -5,8 +5,8 @@ import { useState, useRef, useEffect, type MouseEvent } from "react";
 const STATS = [
   { label: "Projects Built", value: "3+" },
   { label: "Technologies", value: "15+" },
-  { label: "Year of Study", value: "3rd" },
-  { label: "CGPA", value: "7.72" },
+  { label: "Year of Study", value: "4th" },
+  { label: "CGPA", value: "7.66" },
 ];
 
 export default function Hero() {
@@ -51,7 +51,7 @@ export default function Hero() {
         >
           <div className="h-[2px] w-12 bg-indigo-500" />
           <span className="text-lg md:text-xl font-bold tracking-widest text-indigo-300 uppercase">
-            Full Stack Developer &amp; Pre-Final Year IT Student
+            Full Stack Developer &amp; Final Year IT Student
           </span>
         </motion.div>
 
@@ -62,7 +62,7 @@ export default function Hero() {
             transition={{ delay: 0.8, duration: 1 }}
             className="max-w-lg text-lg text-slate-400/90 leading-relaxed"
           >
-            A pre-final year B.Tech IT student who loves building real-world
+            A final year B.Tech IT student who loves building real-world
             full stack applications — from clean React UIs to robust Node.js
             backends. Eager to learn, grow, and contribute to impactful teams.
           </motion.p>
